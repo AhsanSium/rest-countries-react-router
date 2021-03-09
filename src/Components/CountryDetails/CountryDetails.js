@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, Image, Jumbotron } from 'react-bootstrap';
+import { Card, Container, Jumbotron } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,7 +13,7 @@ const CountryDetails = () => {
         fetch(`https://restcountries.eu/rest/v2/name/${countryName}`)
             .then(res => res.json())
             .then(data => setCountry(data));
-    }, [])
+    }, [countryName])
 
     const name = country[0]?.name;
     const flag = country[0]?.flag;
@@ -50,6 +50,7 @@ const CountryDetails = () => {
                         
                         <Card.Text style={styles.content} className="d-inline-block rounded p-3 ">
                         <Card.Title>{name}</Card.Title>
+                            <p>Population: {capital}</p>
                             <p>Population: {population}</p>
                             <p>Region: {region}</p>
                             <p>Area: {area}</p>

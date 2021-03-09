@@ -1,11 +1,11 @@
-import { Button, Card, Col } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Country = (props) => {
 
-    const { name, capital, flag, numericCode } = props.country;
+    const { name, capital, flag } = props.country;
 
     const history = useHistory();
     const handleDetails = (name) => {
