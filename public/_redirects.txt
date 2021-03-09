@@ -1,2 +1,1 @@
-/home              /
-/country/  /country/
+/* /index.html 200
