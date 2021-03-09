@@ -50,7 +50,7 @@ const CountryDetails = () => {
                         
                         <Card.Text style={styles.content} className="d-inline-block rounded p-3 ">
                         <Card.Title>{name}</Card.Title>
-                            <p>Population: {capital}</p>
+                            <p>Capital: {capital}</p>
                             <p>Population: {population}</p>
                             <p>Region: {region}</p>
                             <p>Area: {area}</p>
