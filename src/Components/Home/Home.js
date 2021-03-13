@@ -22,6 +22,7 @@ const Home = () => {
                 countries.map(country =>  <Country key={country.numericCode} country={country}></Country>)
             }
             </CardColumns>
+
         </Container>
             
             
